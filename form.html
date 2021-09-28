@@ -10,23 +10,32 @@
     <form action="" method="">
         <div>
             <label for="fullname">姓名</label>
-            <input type="text" id="fullname">
+            <input type="text" id="fullname" name="fullname">
         </div>
         <div>
             <label for="phone">電話</label>
-            <input type="text" id="phone">
+            <input type="text" id="phone" name="phone">
         </div>
         <div>
             <label for="pw">密碼</label>
-            <input type="password" id="pw">
+            <input type="password" id="pw" name="pw">
         </div>
         <div>
             <label for="birth">生日</label>
-            <input type="date" id="birth">
+            <input type="date" id="birth" name="birth">
         </div>
         <div>
             <label for="num">數量</label>
-            <input type="number" id="num" max="10" min="1">
+            <input type="number" id="num" max="10" min="1" name="num">
+        </div>
+        <div>
+            <label>性別</label>
+            <input type="radio" id="male" name="gender" value="男">
+            <label for="male">男</label>
+            <input type="radio" id="female" name="gender" value="女">
+            <label for="female">女</label>
+            <input type="radio" id="unknown" name="gender" value="不透露">
+            <label for="unknown">不透露</label>
         </div>
     </form>
 </body>
