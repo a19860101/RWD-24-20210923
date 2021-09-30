@@ -1,5 +1,15 @@
 # CSS Cascading Style Sheet
 
+- [CSS Cascading Style Sheet](#css-cascading-style-sheet)
+  - [分類](#分類)
+    - [嵌入式](#嵌入式)
+    - [內部樣式](#內部樣式)
+    - [外部樣式](#外部樣式)
+  - [選取器](#選取器)
+    - [標籤選取器](#標籤選取器)
+    - [類別選取器 class](#類別選取器-class)
+    - [id選取器](#id選取器)
+
 串接樣式表
 
 ## 分類
@@ -89,3 +99,7 @@ p {
     <div class="abc">類別選取</div>
 </body>
 ```
+
+### id選取器
+
+名稱為#字號開頭
