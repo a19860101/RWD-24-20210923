@@ -14,6 +14,9 @@
   - [權重](#權重)
   - [文字相關樣式](#文字相關樣式)
     - [文字色彩-color](#文字色彩-color)
+      - [16進位 #4a3d38](#16進位-4a3d38)
+      - [rgb/rgba色碼](#rgbrgba色碼)
+      - [hsl/hsla色碼](#hslhsla色碼)
 
 串接樣式表
 
@@ -104,7 +107,7 @@ p {
 <style>
     .abc {
         color: pink;
-}
+    }
 </style>
 <body>
     <div class="abc">類別選取</div>
@@ -119,7 +122,7 @@ p {
 <style>
     #xyz {
         color: pink;
-}
+    }
 </style>
 <body>
     <div id="xyz">id選取器</div>
@@ -136,7 +139,8 @@ id選取器只能在頁面使用一次
 <style>
     #xyz h2{
         color: pink;
-}
+    }
+    /* 僅選取#xyz後的h2 */
 </style>
 <body>
     <div id="xyz">
@@ -154,6 +158,7 @@ id選取器只能在頁面使用一次
     h2, h3{
         color: pink;
     }
+    /* h2與h3同時變粉色 */
 </style>
 <body>
     <h2>群組一</h2>
@@ -173,29 +178,29 @@ id > class > tag
 
 ### 文字色彩-color
 
-- 16進位 #4a3d38
+#### 16進位 #4a3d38
 
 由rgb色碼16進位而來。
 
 16進位算法 rgb(30,0,200) 30 / 16 = 1...14 0 / 16 = 0...0 200 / 16 = 12...8 #商餘商餘商餘 如果遇到十位數就轉換為A，所以16進位的16個分別為 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F rgb(30,0,200) => #1E00C8
 
-- rgb色碼 rgb(255,0,34)
-r:red
-g:green
-b:blue
+#### rgb/rgba色碼
+
+- r:red  
+- g:green  
+- b:blue  
+- a:alpha
+
 數值從0~255，因為是光，0最少，255最亮
 
-如果有透明度就會加a:alpha
+#### hsl/hsla色碼
 
-- hsl色碼 hsl(30,10%,20%)
+- h:hue-色相-角度
+- s:saturate-飽和度-%
+- l:lightness-明度-%
 
-h:hue-色相-角度
-s:saturate-飽和度-%
-l:lightness-明度-%
 
-如果有透明度就會加a:alpha
-
-```css 
+```css
 h1 {
     color: red;                /*色彩名稱*/
     color: rgb(255,0,0);       /*RGB色碼*/
