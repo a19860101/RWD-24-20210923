@@ -198,7 +198,7 @@ id > class > tag
 - h:hue-色相-角度
 - s:saturate-飽和度-%
 - l:lightness-明度-%
-
+- a:alpha
 
 ```css
 h1 {
