@@ -28,7 +28,9 @@
     - [小型大寫字母 - font-variant](#小型大寫字母---font-variant)
     - [字體大小 - font-size](#字體大小---font-size)
       - [em 與 rem 的差別](#em-與-rem-的差別)
-    - [字體種類](#字體種類)
+    - [字體種類 - font-family](#字體種類---font-family)
+    - [字體粗細 - font-weight](#字體粗細---font-weight)
+    - [斜體字 - font-style](#斜體字---font-style)
 
 串接樣式表
 
@@ -314,7 +316,7 @@ p {
 - em 的比例是依循最靠近的父元素；rem 的比例是依循根的比例。假設父元素是 24px，子元素是 1.6em，最後的大小就是 24 x 1.6；若子元素是1.6rem，則是 16 x 1.6。
 - 根可以透過 :root,html 修改。
 
-### 字體種類
+### 字體種類 - font-family
 
 ```css
 p {
@@ -324,3 +326,16 @@ p {
 
 通常會在後方設定兩個以上的字體，如果某一個瀏覽器抓不到第一個字體，則會抓第二個字體；若第二個也抓不到則會使用瀏覽器預設字體。
 
+### 字體粗細 - font-weight
+
+- bold
+- bolder
+- light
+- lighter
+- 100-900
+- normal
+
+### 斜體字 - font-style
+
+- italic
+- normal
