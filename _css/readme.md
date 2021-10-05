@@ -24,6 +24,8 @@
     - [字元間距 - letter-spacing](#字元間距---letter-spacing)
     - [單字間距 - word-spacing](#單字間距---word-spacing)
     - [首行縮排 - text-indent](#首行縮排---text-indent)
+    - [文字大小寫 - text-transform](#文字大小寫---text-transform)
+    - [小型大寫字母 - font-variant](#小型大寫字母---font-variant)
 
 串接樣式表
 
@@ -278,3 +280,24 @@ p {
 ### 首行縮排 - text-indent
 
 每段文章首行的縮排距離
+
+### 文字大小寫 - text-transform
+
+```css
+p {
+    text-transform: lowercase;
+    /* 小寫 */
+    text-transform: uppercase;
+    /* 大寫 */
+    text-transform: capitalize;
+    /* 首字大寫 */
+}
+```
+
+### 小型大寫字母 - font-variant
+
+```css
+p {
+    font-variant: small-caps
+}
+```
