@@ -31,6 +31,11 @@
     - [字體種類 - font-family](#字體種類---font-family)
     - [字體粗細 - font-weight](#字體粗細---font-weight)
     - [斜體字 - font-style](#斜體字---font-style)
+  - [背景](#背景)
+    - [背景色 - background-color](#背景色---background-color)
+    - [背景圖片 - background-image](#背景圖片---background-image)
+    - [背景位置 - background-position](#背景位置---background-position)
+    - [背景重複方式 - background-repeat](#背景重複方式---background-repeat)
 
 串接樣式表
 
@@ -339,3 +344,34 @@ p {
 
 - italic
 - normal
+
+## 背景
+
+### 背景色 - background-color
+
+色碼
+
+### 背景圖片 - background-image
+
+圖片路徑
+
+```css
+body {
+    background-image: url("圖片路徑");
+}
+```
+
+### 背景位置 - background-position
+
+- 水平距離與垂直距離
+- top
+- buttom
+- left
+- right
+
+### 背景重複方式 - background-repeat
+
+- repeat
+- no-repeat
+- repeat-x
+- repeat-y
