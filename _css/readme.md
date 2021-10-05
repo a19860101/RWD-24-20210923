@@ -20,6 +20,10 @@
     - [文字對齊 - text-align](#文字對齊---text-align)
     - [文字末行對齊 - text-align-last](#文字末行對齊---text-align-last)
     - [文字裝飾 - text-decoration](#文字裝飾---text-decoration)
+    - [行高 - line-height](#行高---line-height)
+    - [字元間距 - letter-spacing](#字元間距---letter-spacing)
+    - [單字間距 - word-spacing](#單字間距---word-spacing)
+    - [首行縮排 - text-indent](#首行縮排---text-indent)
 
 串接樣式表
 
@@ -253,5 +257,24 @@ p {
 
     text-decoration-thickness: 10px;
     /* 文字裝飾粗細 */
+
+    text-decoration:underline wavy 2px crimson;
+    /* 縮寫 */
 }
 ```
+
+### 行高 - line-height
+
+每一行的高度。行高不管設定為多少，文字一定都會行的正中間。
+
+### 字元間距 - letter-spacing
+
+字母之間的距離
+
+### 單字間距 - word-spacing
+
+單字與單字之間的距離，中文不影響。
+
+### 首行縮排 - text-indent
+
+每段文章首行的縮排距離
