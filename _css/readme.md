@@ -17,6 +17,9 @@
       - [16進位 #4a3d38](#16進位-4a3d38)
       - [rgb/rgba色碼](#rgbrgba色碼)
       - [hsl/hsla色碼](#hslhsla色碼)
+    - [文字對齊 - text-align](#文字對齊---text-align)
+    - [文字末行對齊 - text-align-last](#文字末行對齊---text-align-last)
+    - [文字裝飾 - text-decoration](#文字裝飾---text-decoration)
 
 串接樣式表
 
@@ -208,5 +211,47 @@ h1 {
     color: #ff0000;            /*16進位*/
     color: #f00;               /*16進位縮寫*/
     color: hsl(112, 80%, 36%)  /*色相飽和度明度*/
+}
+```
+
+### 文字對齊 - text-align
+
+- left
+- center
+- right
+- justify
+
+### 文字末行對齊 - text-align-last
+
+- left
+- center
+- right
+- justify
+
+### 文字裝飾 - text-decoration
+
+```css
+p {
+    text-decoration: line-through;
+    /* 
+        文字裝飾
+        none,underline,overline,line-through 
+    */
+
+
+    text-decoration-color: crimson;
+    /* 文字裝飾色彩 */
+    
+    text-decoration-style: wavy;
+    /* 
+        文字裝飾樣式
+        solid,dashed,dotted,double,wavy 
+    */
+    
+    text-decoration-line: underline;
+    /* 文字裝飾位置 */
+
+    text-decoration-thickness: 10px;
+    /* 文字裝飾粗細 */
 }
 ```
