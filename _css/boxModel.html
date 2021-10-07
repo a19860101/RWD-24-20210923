@@ -82,11 +82,23 @@
             /* margin-left: auto; */
             margin: auto;
 
+            display: block;
+            /* 
+                inline沒有width跟height
+                左右功能正常，上下功能失效
+            */
 
+        }
+        a {
+            width: 100px;
+            height: 100px;
+            background-color: #ccc;
+            display: block;
         }
     </style>
 </head>
 <body>
+    <a href="#">link</a>
     <div class="box">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, soluta incidunt dicta adipisci debitis quam rem fugit laudantium molestias. Laboriosam ex earum provident sequi. Culpa exercitationem quo, reiciendis aliquid temporibus beatae necessitatibus nesciunt cupiditate eum nam. Laborum non dicta, labore ipsum nihil corrupti, amet enim alias est optio sed ipsam.
     </div>
