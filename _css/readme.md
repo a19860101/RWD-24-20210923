@@ -38,6 +38,8 @@
     - [背景重複方式 - background-repeat](#背景重複方式---background-repeat)
     - [背景固定方式 - background-attachment](#背景固定方式---background-attachment)
     - [背景大小 - background-size](#背景大小---background-size)
+    - [背景混和模式 - background-blend-mode](#背景混和模式---background-blend-mode)
+    - [漸層色](#漸層色)
 
 串接樣式表
 
@@ -388,3 +390,28 @@ body {
 - 寬度 高度
 - cover
 - contain
+
+### 背景混和模式 - background-blend-mode
+
+- screen      濾色(去黑留白)
+- multiply    色彩增值(去白留黑)
+- overlay     覆蓋
+- darken      變暗
+- lighten     變亮
+- color       顏色
+- luminosity  明度
+- hue         色相
+- soft-light  柔光
+- hard-light  實光
+- color-burn  加深顏色
+- color-dodge 加亮顏色
+- exclusion   排除
+- difference  差異化
+
+### 漸層色
+
+```css
+body {
+    background-image: linear-gradient(to left top,#ff0000,#fffb0a);
+}
+```
