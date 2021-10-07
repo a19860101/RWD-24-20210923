@@ -36,6 +36,8 @@
     - [背景圖片 - background-image](#背景圖片---background-image)
     - [背景位置 - background-position](#背景位置---background-position)
     - [背景重複方式 - background-repeat](#背景重複方式---background-repeat)
+    - [背景固定方式 - background-attachment](#背景固定方式---background-attachment)
+    - [背景大小 - background-size](#背景大小---background-size)
 
 串接樣式表
 
@@ -375,3 +377,14 @@ body {
 - no-repeat
 - repeat-x
 - repeat-y
+
+### 背景固定方式 - background-attachment
+
+- scroll
+- fixed
+
+### 背景大小 - background-size
+
+- 寬度 高度
+- cover
+- contain
