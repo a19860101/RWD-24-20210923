@@ -42,6 +42,10 @@
     - [漸層色](#漸層色)
   - [清單](#清單)
   - [盒子模型 box-model](#盒子模型-box-model)
+    - [邊框 - border](#邊框---border)
+    - [內距 - padding](#內距---padding)
+      - [縮寫](#縮寫)
+      - [寬度與高度計算](#寬度與高度計算)
 
 串接樣式表
 
@@ -428,3 +432,57 @@ cjk-ideographic,hiragana,katakana
 hebrew, armenian, georgian,lower-greek 
 
 ## 盒子模型 box-model
+
+### 邊框 - border
+
+- border-style
+- border-width
+- border-color
+- border-left-style
+- border-left-width
+- border-left-color
+- border-right-style
+- border-right-width
+- border-right-color
+- border-top-style
+- border-top-width
+- border-top-color
+- border-bottom-style
+- border-bottom-width
+- border-bottom-color
+- border
+- border-left
+- border-right
+- border-top
+- border-bottom
+
+### 內距 - padding
+
+- padding
+- padding-left
+- padding-right
+- padding-top
+- padding-bottom
+
+#### 縮寫
+
+```css
+    .box {
+        padding: 30px;
+        /* 上下左右 30px */
+
+        padding: 100px 40px;
+        /* 上下100px 左右40px */
+
+        padding: 0 100px 50px;
+        /* 上0 左右100px 下50px */
+
+        padding: 0px 100px 50px 200px;
+        /* 上0 右100 下50 左200 */
+    }
+```
+
+#### 寬度與高度計算
+
+總寬度 = width + border-left + border-right + padding-left + padding-right
+總高度 = height + border-top + border-bottom + padding-top + padding-bottom
