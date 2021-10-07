@@ -484,5 +484,7 @@ hebrew, armenian, georgian,lower-greek
 
 #### 寬度與高度計算
 
+預設狀態下
 總寬度 = width + border-left + border-right + padding-left + padding-right
 總高度 = height + border-top + border-bottom + padding-top + padding-bottom
+
