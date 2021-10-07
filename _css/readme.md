@@ -40,6 +40,7 @@
     - [背景大小 - background-size](#背景大小---background-size)
     - [背景混和模式 - background-blend-mode](#背景混和模式---background-blend-mode)
     - [漸層色](#漸層色)
+  - [清單](#清單)
 
 串接樣式表
 
@@ -415,3 +416,12 @@ body {
     background-image: linear-gradient(to left top,#ff0000,#fffb0a);
 }
 ```
+
+## 清單
+
+- list-style
+ none
+disc, circle, square
+decimal, lower-alpha, upper-alpha, lower-roman, upper-roman
+cjk-ideographic,hiragana,katakana
+hebrew, armenian, georgian,lower-greek 
