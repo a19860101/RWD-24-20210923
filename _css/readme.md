@@ -46,6 +46,8 @@
     - [內距 - padding](#內距---padding)
       - [縮寫](#縮寫)
       - [寬度與高度計算](#寬度與高度計算)
+    - [box-sizing](#box-sizing)
+    - [顯示 - display](#顯示---display)
 
 串接樣式表
 
@@ -488,3 +490,20 @@ hebrew, armenian, georgian,lower-greek
 總寬度 = width + border-left + border-right + padding-left + padding-right
 總高度 = height + border-top + border-bottom + padding-top + padding-bottom
 
+### box-sizing
+
+讓width包含border與padding
+
+- border-box
+- content-box
+
+### 顯示 - display
+
+- block
+- inline
+- inline-block
+- table
+- table-cell
+- flex
+- grid
+- none
