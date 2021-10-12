@@ -431,11 +431,11 @@ body {
 ## 清單
 
 - list-style
- none
-disc, circle, square
-decimal, lower-alpha, upper-alpha, lower-roman, upper-roman
-cjk-ideographic,hiragana,katakana
-hebrew, armenian, georgian,lower-greek 
+- none
+- disc, circle, square
+- decimal, lower-alpha, upper-alpha, lower-roman, upper-roman
+- cjk-ideographic,hiragana,katakana
+- hebrew, armenian, georgian,lower-greek
 
 ## 盒子模型 box-model
 
@@ -523,7 +523,6 @@ hebrew, armenian, georgian,lower-greek
 
 - 元素之間有4px不等的空隙
 - 無法使用margin:auto置中
-
 
 #### inline-block解決方案
 
