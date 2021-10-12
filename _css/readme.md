@@ -52,6 +52,10 @@
       - [inline-block優點](#inline-block優點)
       - [inline-block的缺點](#inline-block的缺點)
       - [inline-block解決方案](#inline-block解決方案)
+    - [float](#float)
+    - [float優點](#float優點)
+    - [float缺點](#float缺點)
+    - [float解決方案](#float解決方案)
 
 串接樣式表
 
@@ -529,3 +533,22 @@ body {
 - 父元素的font-size設定為0
 - 子元素的font-size還原
 - 設定垂直對齊(vertical-align)
+
+### float
+
+### float優點
+
+- 可併排
+- 元素之間無空隙
+
+### float缺點
+
+- 後方元素會被浮動影響
+- 父元素崩蹋
+
+### float解決方案
+
+- height
+- overflow
+- clearfix
+- flowroot

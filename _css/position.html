@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .relative {
+            width: 200px;
+            height: 200px;
+            background-color: #fa0;
+
+            position: relative;
+            bottom: -100px;
+            z-index: 999;
+            /* top,bottom,left,right */
+        }
+        .relative2 {
+            width: 250px;
+            height: 250px;
+            background-color: #0af;
+
+            position: relative;
+            z-index: 9;
+        }
+    </style>
+</head>
+<body>
+    <h1>position</h1>
+    <ul>
+        <li>static 靜態</li>
+        <li>relative 相對</li>
+        <li>absolute 絕對</li>
+        <li>fixed 固定</li>
+        <li>sticky 黏性</li>
+    </ul>
+    <div class="relative"></div>
+    <div class="relative2"></div>
+</body>
+</html>
