@@ -56,6 +56,13 @@
     - [float優點](#float優點)
     - [float缺點](#float缺點)
     - [float解決方案](#float解決方案)
+  - [定位-position](#定位-position)
+    - [靜態 - static](#靜態---static)
+    - [相對 - relative](#相對---relative)
+    - [絕對 - absolute](#絕對---absolute)
+    - [固定 - fixed](#固定---fixed)
+    - [黏性 - sticky](#黏性---sticky)
+  - [flex](#flex)
 
 串接樣式表
 
@@ -552,3 +559,37 @@ body {
 - overflow
 - clearfix
 - flowroot
+
+## 定位-position
+
+### 靜態 - static
+
+靜態定位是所有元素的預設值。
+
+### 相對 - relative
+
+以預設位置為基準的指定位置
+
+### 絕對 - absolute
+
+以最相近父元素為基準的定位。若所有父元素都沒有設定定位（static等同沒有設定），則會以視窗為基準，並隨著頁面滾動而移動。
+
+### 固定 - fixed
+
+相對於視窗的定位，且不會隨著視窗移動。
+
+### 黏性 - sticky
+
+依據使用者滾動卷軸的位置定位
+
+## flex
+
+- display
+- flex-direction
+- flex-wrap
+- flex-flow
+- jutify-content
+- align-items
+- align-self
+- align-content
+- order

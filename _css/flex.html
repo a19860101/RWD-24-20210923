@@ -6,16 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
         .container {
             width: 1200px;
             background-color: #ccc;
             margin: auto;
             display: flex;
-            flex-direction: column;
+            /* flex-direction: row; */
             /* row,column,row-reverse,column-reverse */
+            /* flex-wrap: wrap; */
+            /* wrap, no-wrap, wrap-reverse */
+            flex-flow: row wrap;
         }
         .box {
             width: 400px;
+            padding: 15px;
         }
     </style>
 </head>
@@ -36,6 +43,25 @@
         </div>
         <div class="box">
             <h2>title 3</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, aperiam impedit! Perspiciatis provident sed voluptates tempore, aspernatur nemo ab vero officiis! Inventore porro iste, eius repellat tempore ullam hic magnam!
+            </p>
+        </div>
+        <div class="box">
+            <h2>title 4</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, aperiam impedit! Perspiciatis provident sed voluptates tempore, aspernatur nemo ab vero officiis! Inventore porro iste, eius repellat tempore ullam hic magnam!
+            </p>
+        </div>
+        <div class="box">
+            <h2>title 5</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, aperiam impedit! Perspiciatis provident sed voluptates tempore, aspernatur nemo ab vero officiis! Inventore porro iste, eius repellat tempore ullam hic magnam!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, aperiam impedit! Perspiciatis provident sed voluptates tempore, aspernatur nemo ab vero officiis! Inventore porro iste, eius repellat tempore ullam hic magnam!
+            </p>
+        </div>
+        <div class="box">
+            <h2>title 6</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, aperiam impedit! Perspiciatis provident sed voluptates tempore, aspernatur nemo ab vero officiis! Inventore porro iste, eius repellat tempore ullam hic magnam!
             </p>
