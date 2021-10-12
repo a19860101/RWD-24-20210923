@@ -48,6 +48,7 @@
       - [寬度與高度計算](#寬度與高度計算)
     - [box-sizing](#box-sizing)
     - [顯示 - display](#顯示---display)
+    - [inline-block](#inline-block)
 
 串接樣式表
 
@@ -507,3 +508,5 @@ hebrew, armenian, georgian,lower-greek
 - flex
 - grid
 - none
+
+### inline-block
