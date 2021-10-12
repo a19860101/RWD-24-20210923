@@ -49,6 +49,9 @@
     - [box-sizing](#box-sizing)
     - [顯示 - display](#顯示---display)
     - [inline-block](#inline-block)
+      - [inline-block優點](#inline-block優點)
+      - [inline-block的缺點](#inline-block的缺點)
+      - [inline-block解決方案](#inline-block解決方案)
 
 串接樣式表
 
@@ -510,3 +513,20 @@ hebrew, armenian, georgian,lower-greek
 - none
 
 ### inline-block
+
+#### inline-block優點
+
+- 可併排
+- 有width跟height
+
+#### inline-block的缺點
+
+- 元素之間有4px不等的空隙
+- 無法使用margin:auto置中
+
+
+#### inline-block解決方案
+
+- 父元素的font-size設定為0
+- 子元素的font-size還原
+- 設定垂直對齊(vertical-align)
