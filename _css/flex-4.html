@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI';
+        }
+        .container {
+            width: 1000px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+        .box {
+            width: calc(1000px / 3);
+            padding: 15px;
+        }
+        .box:nth-of-type(1){
+            /* align-self: flex-end; */
+            order: 3;
+        }
+        .box:nth-of-type(2){
+            order: 1;
+        }
+        .box:nth-of-type(3){
+            order: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>title 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci accusamus obcaecati in autem dicta veritatis deleniti ab culpa, consequuntur, earum facere dignissimos porro mollitia excepturi assumenda repudiandae consectetur dolorem enim.</p>
+        </div>
+        <div class="box">
+            <h2>title 2</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quos velit nostrum ipsum fuga distinctio commodi illum modi? Similique dolor maxime voluptatum modi voluptate distinctio eius quas ea dicta deleniti!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quos velit nostrum ipsum fuga distinctio commodi illum modi? Similique dolor maxime voluptatum modi voluptate distinctio eius quas ea dicta deleniti!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quos velit nostrum ipsum fuga distinctio commodi illum modi? Similique dolor maxime voluptatum modi voluptate distinctio eius quas ea dicta deleniti!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quos velit nostrum ipsum fuga distinctio commodi illum modi? Similique dolor maxime voluptatum modi voluptate distinctio eius quas ea dicta deleniti!
+            </p>
+        </div>
+        <div class="box">
+            <h2>title 3</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum totam id aperiam porro praesentium officia natus error consequuntur fuga eligendi, nulla, dolorum odit. Fuga, sunt laudantium veniam totam nemo vitae?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum totam id aperiam porro praesentium officia natus error consequuntur fuga eligendi, nulla, dolorum odit. Fuga, sunt laudantium veniam totam nemo vitae?
+            </p>
+        </div>
+    </div>
+</body>
+</html>
