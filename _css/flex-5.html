@@ -18,25 +18,33 @@
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
+            background-color: #ccc;
         }
         .box {
-            width: calc(1000px / 3);
-            flex-basis: calc(1000px / 3);
+            width: calc(1000px / 5);
+            flex-basis: calc(1000px / 5);
             /* 
                 flex-basis會優先於寬度/高度
                 若flex-direction為row，flex-basis就代表寬度
                 若flex-direction為column，flex-basis就代表高度
+
+                預設shrink為1 grow為0
             */
+            /* flex-grow:; */
+            /* flex-shrink:; */
             padding: 15px;
         }
         .box:nth-of-type(1){
             background-color: #fa0;
+            flex-grow: 1;
         }
         .box:nth-of-type(2){
             background-color: #0af;
+            flex-grow: 0;
         }
         .box:nth-of-type(3){
             background-color: #e04;
+            flex-grow: 1;
         }
     </style>
 </head>
