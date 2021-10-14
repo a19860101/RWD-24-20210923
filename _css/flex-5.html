@@ -16,19 +16,21 @@
             width: 1000px;
             margin: auto;
             display: flex;
-            flex-wrap: wrap;
+            /* flex-wrap: wrap; */
             flex-direction: row;
             background-color: #ccc;
         }
         .box {
             width: calc(1000px / 5);
-            flex-basis: calc(1000px / 5);
+            flex-basis: calc(1000px / 3);
             /* 
                 flex-basis會優先於寬度/高度
                 若flex-direction為row，flex-basis就代表寬度
                 若flex-direction為column，flex-basis就代表高度
 
                 預設shrink為1 grow為0
+
+                flex-wrap與flex-shrink有衝突，當有wrap時，shrink無效
             */
             /* flex-grow:; */
             /* flex-shrink:; */
@@ -37,14 +39,22 @@
         .box:nth-of-type(1){
             background-color: #fa0;
             flex-grow: 1;
+            flex-shrink: 0;
         }
         .box:nth-of-type(2){
             background-color: #0af;
-            flex-grow: 0;
+            flex-grow: 1;
+            flex-shrink: 0;
         }
         .box:nth-of-type(3){
             background-color: #e04;
             flex-grow: 1;
+            flex-shrink: 0;
+        }
+        .box:nth-of-type(4){
+            background-color: #bada55;
+            flex-grow: 1;
+            flex-shrink: 0;
         }
     </style>
 </head>
@@ -65,6 +75,13 @@
         </div>
         <div class="box">
             <h2>title 3</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum totam id aperiam porro praesentium officia natus error consequuntur fuga eligendi, nulla, dolorum odit. Fuga, sunt laudantium veniam totam nemo vitae?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum totam id aperiam porro praesentium officia natus error consequuntur fuga eligendi, nulla, dolorum odit. Fuga, sunt laudantium veniam totam nemo vitae?
+            </p>
+        </div>
+        <div class="box">
+            <h2>title 4</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum totam id aperiam porro praesentium officia natus error consequuntur fuga eligendi, nulla, dolorum odit. Fuga, sunt laudantium veniam totam nemo vitae?
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum totam id aperiam porro praesentium officia natus error consequuntur fuga eligendi, nulla, dolorum odit. Fuga, sunt laudantium veniam totam nemo vitae?
