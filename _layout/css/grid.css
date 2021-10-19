@@ -1,5 +1,6 @@
 .container {
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     margin: auto;
 }
 .row {
@@ -41,4 +42,8 @@
 }
 .col-12 {
     flex:0 0 calc(100% / 12 * 12);
+}
+[class^="col"]{
+    padding-left: 15px;
+    padding-right: 15px;
 }
