@@ -16,8 +16,8 @@ table {
     border-collapse: collapse;
 }
 img {
-    /* vertical-align: top; */
-    display: block;
+    vertical-align: top;
+    /* display: block; */
     /* 
         當區塊元素包img時，因為img的預設vertical-align是baseline
         所以下方會出現4px左右的空隙
