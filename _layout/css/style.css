@@ -16,14 +16,19 @@ nav li {
     margin-left: 30px;
     font-size: 14px;
 }
-nav a {
+nav .menu a {
     text-decoration: none;
     color: #000;
     line-height: 60px;
 }
-nav .cart, nav .user {
+nav .cart, nav .user, nav .store {
     position: relative;
     bottom: -5px;
+}
+nav .logo {
+    height: 60px;
+    display: flex;
+    align-items: center;
 }
 nav .logo img {
     width: 200px;
