@@ -585,11 +585,11 @@ body {
 ## flex
 
 - display
-- flex-direction 
-- flex-wrap
-- flex-flow
-- jutify-content
-- align-items
-- align-self
-- align-content
-- order
+- flex-direction 排列方向
+- flex-wrap 換行
+- flex-flow 換行/排列方向 縮寫
+- jutify-content 水平對其
+- align-items 垂直對其
+- align-self 子項目垂直對其
+- align-content 整體垂直對其
+- order 排序
