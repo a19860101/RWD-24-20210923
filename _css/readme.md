@@ -585,7 +585,7 @@ body {
 ## flex
 
 - display
-- flex-direction
+- flex-direction 
 - flex-wrap
 - flex-flow
 - jutify-content
