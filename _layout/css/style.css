@@ -1,10 +1,10 @@
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
     padding-left: 60px;
     padding-right: 60px;
-    height: 60px;
+    /* height: 60px; */
 
     background-color: #ccc;
 }
@@ -19,4 +19,12 @@ nav li {
 nav a {
     text-decoration: none;
     color: #000;
+    line-height: 60px;
+}
+nav .cart, nav .user {
+    position: relative;
+    bottom: -5px;
+}
+nav .logo img {
+    width: 200px;
 }
