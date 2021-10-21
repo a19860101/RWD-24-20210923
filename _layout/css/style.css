@@ -132,3 +132,14 @@ header img {
 .products-text{
     margin: 10px 0;
 }
+/* banner */
+#banner > [class^="col"] {
+    padding: 0;
+}
+#banner .row [class^="col"]{
+    padding: 1.5px;
+}
+
+/* .p-0 {
+    padding: 0;
+} */
