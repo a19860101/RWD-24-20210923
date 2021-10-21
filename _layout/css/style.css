@@ -139,7 +139,19 @@ header img {
 #banner .row [class^="col"]{
     padding: 1.5px;
 }
-
+#banner .banner-content {
+    position: relative;
+}
+#banner .banner-info {
+    position: absolute;
+    color: #fff;
+    z-index: 99;
+    width: 100%;
+    bottom: 0;
+}
+#banner .banner-text {
+    margin: 15px;
+}
 /* .p-0 {
     padding: 0;
 } */
