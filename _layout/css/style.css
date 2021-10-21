@@ -173,3 +173,37 @@ header img {
 /* .p-0 {
     padding: 0;
 } */
+
+/* footer */
+footer {
+    background-color: #dddddd;
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 14px;
+}
+footer .row {
+    align-items: flex-start;
+}
+footer li {
+    margin-bottom: 20px;
+}
+.footer-contact div{
+    margin-bottom: 20px;
+}   
+
+footer .footer-list {
+    margin-top: 35px;
+}
+footer li {
+    list-style: none;
+}
+footer li a {
+    color: #222;
+    text-decoration: none;
+}
+footer i {
+    display: inline-block;
+    width: 30px;
+    color: #fa0;
+}
