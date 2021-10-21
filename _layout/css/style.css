@@ -118,3 +118,17 @@ header img {
     margin-top: 30px;
     margin-bottom: 30px;
 }
+.products-items {
+    position: relative;
+}
+.products-info {
+    position: absolute;
+    /* background-color: #098; */
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    color: #fff;
+}
+.products-text{
+    margin: 10px 0;
+}
