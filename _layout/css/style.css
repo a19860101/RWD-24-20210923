@@ -69,11 +69,27 @@ header img {
 #news .news-items {
     border-top: 1px solid #b3b3b3;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 #news .news-link {
     display: flex;
-    justify-content: space-around;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    /* justify-content: ; */
+    padding-top: 25px;
+    padding-bottom: 25px;
     border-bottom: 1px solid #b3b3b3;
+
+    text-decoration: none;
+}
+
+#news .news-date {
+    width: 200px;
+    text-align: center;
+    color: #a8a8a8;
+}
+#news .news-category {
+    width: 300px;
+    color: #a8a8a8;
+}
+#news .news-caption {
+    color: #222;
 }
