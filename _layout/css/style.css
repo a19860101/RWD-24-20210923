@@ -61,6 +61,10 @@ header img {
     font-size: 18px;
 }
 /* news */
+#news {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 #news .news-title {
     display: flex;
     align-items: center;
@@ -81,6 +85,18 @@ header img {
     text-decoration: none;
 }
 
+#news .news-link:hover .news-caption{
+    color: #fa0;
+}
+
+#news .news-more {
+    color: #a8a8a8;
+    text-decoration: none;
+    margin-right: 60px;
+}
+#news .news-more:hover {
+    color: #fa0;
+}
 #news .news-date {
     width: 200px;
     text-align: center;
