@@ -142,6 +142,24 @@ header img {
 #banner .banner-content {
     position: relative;
 }
+#banner .banner-content::after {
+    content:'';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 179, 15, .8);
+    z-index: 98;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+#banner .banner-content:hover::after {
+    opacity: 1;
+}
+#banner .banner-content:hover .banner-info {
+    color: #000;
+}
 #banner .banner-info {
     position: absolute;
     color: #fff;
