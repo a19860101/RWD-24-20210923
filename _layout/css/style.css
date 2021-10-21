@@ -60,3 +60,9 @@ header img {
     color: #888;
     font-size: 18px;
 }
+/* news */
+#news .news-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
