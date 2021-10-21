@@ -66,3 +66,14 @@ header img {
     align-items: center;
     justify-content: space-between;
 }
+#news .news-items {
+    border-top: 1px solid #b3b3b3;
+    margin-top: 20px;
+}
+#news .news-link {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #b3b3b3;
+}
