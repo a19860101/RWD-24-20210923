@@ -109,3 +109,12 @@ header img {
 #news .news-caption {
     color: #222;
 }
+/* products */
+#products {
+    padding: 60px;
+}
+.products-title {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
