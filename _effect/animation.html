@@ -11,7 +11,7 @@
             height: 200px;
             background-color: #654;
 
-            animation: fade-in 3s;
+            animation: move 6s;
         }
         @keyframes test {
             from {}
@@ -23,6 +23,13 @@
                 transform: translate(0,50px);
             }
             to {}
+        }
+        @keyframes move {
+            0% {}
+            25% {transform: translate(600px,0)rotate(-90deg)}
+            50% {transform: translate(600px,600px)rotate(-180deg)}
+            75% {transform: translate(0,600px)rotate(-270deg)}
+            100% {transform: translate(0,0)rotate(-360deg)}
         }
     </style>
 </head>
