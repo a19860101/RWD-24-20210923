@@ -9,6 +9,7 @@ nav {
     box-shadow: 0px 1px 4px rgba(0,0,0,.3);
     /* box-shadow: 水平距離 垂直距離 模糊程度 陰影顏色 */
     position: fixed;
+    z-index: 999;
 }
 nav ul {
     list-style: none;
