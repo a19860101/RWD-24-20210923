@@ -212,3 +212,27 @@ footer i {
     width: 30px;
     color: #fa0;
 }
+/* service */
+.service {
+    width: 75px;
+    height: 75px;
+    background-color: #fa0;
+    position: fixed;
+    right: 30px;
+    bottom: 100px;
+    border-radius: 50%;
+    border: 2px solid #a7a7a7;
+    box-shadow: 0 2px 15px rgba(0,0,0,.5);
+    z-index: 999;
+}
+.msg {
+    background-color: #fff;
+    position: fixed;
+    border-radius: 50px;
+    right: 120px;
+    bottom: 115px;
+    padding: 8px 10px;
+    z-index: 999;
+    box-shadow: 0 2px 15px rgba(0,0,0,.5);
+    font-size: 12px;
+}
