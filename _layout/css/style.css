@@ -236,3 +236,13 @@ footer i {
     box-shadow: 0 2px 15px rgba(0,0,0,.5);
     font-size: 12px;
 }
+.top {
+    background-color: #fa0;
+    padding: 5px;
+    position: fixed;
+    z-index: 999;
+    right: 30px;
+    bottom: 45px;
+    color: #fff;
+    opacity: .7;
+}
