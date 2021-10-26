@@ -85,7 +85,10 @@ header img {
 
     text-decoration: none;
 }
-
+#news .news-caption {
+    color: #222;
+    transition: .4s;
+}
 #news .news-link:hover .news-caption{
     color: #fa0;
 }
@@ -94,6 +97,7 @@ header img {
     color: #a8a8a8;
     text-decoration: none;
     margin-right: 60px;
+    transition: .6s
 }
 #news .news-more:hover {
     color: #fa0;
@@ -107,9 +111,7 @@ header img {
     width: 300px;
     color: #a8a8a8;
 }
-#news .news-caption {
-    color: #222;
-}
+
 /* products */
 #products {
     padding: 60px;
@@ -154,6 +156,7 @@ header img {
     top: 0;
     left: 0;
     opacity: 0;
+    transition: .6s
 }
 #banner .banner-content:hover::after {
     opacity: 1;
@@ -167,6 +170,7 @@ header img {
     z-index: 99;
     width: 100%;
     bottom: 0;
+    transition: .6s
 }
 #banner .banner-text {
     margin: 15px;
