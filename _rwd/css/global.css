@@ -1,0 +1,32 @@
+/* reset */
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI','微軟正黑體';
+}
+html,body,h1,h2,h3,h4,h5,h6,p,
+ul,ol,li,table,form,tr,td,th,
+header,nav,footer,main,article,
+section,aside,figure,figcaption,
+picture,div,span {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+table {
+    border-collapse: collapse;
+}
+img {
+    vertical-align: top;
+    /* display: block; */
+    /* 
+        當區塊元素包img時，因為img的預設vertical-align是baseline
+        所以下方會出現4px左右的空隙
+    
+        解決方式:
+        vertical-align設定baseline以外的值
+        轉成block
+    */
+}
+.w-100 {
+    width: 100%;
+}
