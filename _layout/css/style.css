@@ -1,5 +1,9 @@
+body {
+    padding-top: 60px;
+}
 @media(max-width:1200px){
     nav {
+        top: 0;
         width: 100%;
         display: flex;
         position: fixed;
@@ -18,7 +22,7 @@
         width: 200px;
     }
     nav .menu {
-        /* display: none; */
+        display: none;
         position: fixed;
         z-index: 100;
         height: calc(100% - 61px);
@@ -39,11 +43,15 @@
 
     }
     nav .menu .cart {
+        display: none;
+    }
+    .cart-icon {
+        display: block;
         position: absolute;
         right: 15px;
-        top: -45px;
-        border-bottom: 0;
-        display: block;
+        top: 20px;
+        color: #000;
+        font-size: 0.8em;
     }
     .toggle-icon {
         display: block;
@@ -64,7 +72,11 @@
     .toggle-icon {
         display: none;
     }
+    .cart-icon {
+        display: none;
+    }
     nav {
+        top: 0;
         width: 100%;
         display: flex;
         justify-content: space-between;
