@@ -1,6 +1,5 @@
 .container {
     width: 100%;
-    max-width: 1200px;
     margin: auto;
 }
 .row {
@@ -47,6 +46,13 @@
     flex:0 0 calc(100% / 12 * 12);
 }
 @media(min-width: 520px){
+    .container {
+        width: 520px;
+    }
+    .container-sm {
+        max-width: 520px;
+        margin: auto;
+    }
     .col-sm {
         flex: 1 0 0;
     }
@@ -88,6 +94,13 @@
     }
 }
 @media(min-width:768px){
+    .container {
+        width: 768px;
+    }
+    .container-md {
+        max-width: 768px;
+        margin: auto;
+    }
     .col-md {
         flex: 1 0 0;
     }
@@ -129,6 +142,13 @@
     }
 }
 @media(min-width:1024px){
+    .container {
+        width: 1024px;
+    }
+    .container-lg {
+        max-width: 1024px;
+        margin: auto;
+    }
     .col-lg {
         flex: 1 0 0;
     }
@@ -170,6 +190,13 @@
     }
 }
 @media(min-width:1200px){
+    .container {
+        width: 1200px;
+    }
+    .container-xl {
+        max-width: 1200px;
+        margin: auto;
+    }
     .col-xl {
         flex: 1 0 0;
     }
