@@ -7,19 +7,23 @@
     <title>Document</title>
     <style>
         body {
-            background-color: #aaa;
+            background-color: #ccc;
         }
-        @media screen and (min-width:800px){
+        @media screen and (min-width: 600px)and (max-width:1024px){
+            body {
+                background-color: #098;
+            }
+        }
+        @media screen and (min-width:1024px)and (max-width:1400px){
             body {
                 background-color: #fa0;
             }
         }
-        @media screen and (min-width: 1400px){
+        @media screen and (min-width:1400px){
             body {
                 background-color: #0af;
             }
         }
-        /* min-width 從小寫到大 */
     </style>
 </head>
 <body>
