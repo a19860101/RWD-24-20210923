@@ -29,15 +29,41 @@
     nav .menu li {
         border-bottom: 1px solid #c3c3c3;
         padding-left: 15px;
+        list-style: none;
 
     }
     nav .menu a {
         text-decoration: none;
         color: #000;
         line-height: 50px;
+
+    }
+    nav .menu .cart {
+        position: absolute;
+        right: 15px;
+        top: -45px;
+        border-bottom: 0;
+        display: block;
+    }
+    .toggle-icon {
+        display: block;
+        position: absolute;
+        left: 15px;
+        top: 20px;
+        color: #000;
+    }
+    nav .menu ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .user {
+        order: -1;
     }
 }
 @media(min-width:1200px){
+    .toggle-icon {
+        display: none;
+    }
     nav {
         width: 100%;
         display: flex;
