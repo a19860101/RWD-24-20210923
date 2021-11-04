@@ -12,7 +12,8 @@ PC/MAC
 PC/MAC
 
 - Ctrl/Cmd + S 存檔
-- Ctrl/Cmd + / 註解
+- Ctrl/Cmd + / 行註解
+- Alt/Option + A 區塊註解
 - Alt/Option  + Z 自動換行
 - Ctrl/Cmd + B 開關左側區塊
 - Ctrl/Cmd + D 選取相同文字
