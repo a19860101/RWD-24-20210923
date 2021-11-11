@@ -39,3 +39,18 @@ console.log(a === b);//值與資料型態皆須相等
 console.log(x > 0 && y < 0);
 console.log(x > 0 || y < 0);
 console.log(!x);
+
+// 三元運算子
+
+// 
+
+// let result = x < 0 ? 'success':'error';
+
+let score = 34;
+
+let result = score >= 80 ? 'good': score >= 60 ? 'soso' : 'bad';  
+
+console.log(result);
+
+// 條件 ? 成立 : 不成立
+// 條件 ? 成立 : 第二條件 ? 成立 : 不成立
