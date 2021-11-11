@@ -36,3 +36,19 @@ console.log(b);
 const A = 'RWD';
 // A = '100';
 console.log(A);
+
+// 資料型別
+
+let x = 100; // number
+let y = 'hello'; //string
+let z = true; //boolean 布林
+
+let i = null; //null 空
+let j; //未定義 undefined
+
+let o = {}; //object 物件
+let arr = []; //array 陣列
+
+
+console.log(o);
+
