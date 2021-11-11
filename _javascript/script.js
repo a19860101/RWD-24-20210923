@@ -1,6 +1,6 @@
 // alert('Hello 我是外部');
 
-// 變數
+// 變數 var variable
 
 var a = 10;
 var color = 'red';
@@ -15,4 +15,24 @@ let text = 'hello js';
     不可使用保留字
 */
 
-console.log(text);
+var a = 'test';
+// let b = 'hello';
+let b2 = 'hello';
+
+b = 100;
+console.log(b);
+
+/* 
+    var 與 let 差別
+    var可以重複宣告，let,const不行
+    範疇不同
+
+*/
+
+
+// 常數 constant variable
+// 禁止重新賦值
+
+const A = 'RWD';
+// A = '100';
+console.log(A);
