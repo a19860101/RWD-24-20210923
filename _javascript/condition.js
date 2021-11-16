@@ -33,7 +33,7 @@ if(x > 100){
 
 // switch
 
-let i = 'asdf';
+let i = 0;
 switch(i){
     case 0:
         console.log('星期日');
@@ -59,4 +59,34 @@ switch(i){
     default:
         console.log('請輸入正確的數值');
 
+}
+switch(i){
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+        console.log('上班日');
+        break;
+    case 6:
+    case 0:
+        console.log('放假');
+        break;
+    default:
+        console.log('error');
+}
+
+let j = 'asdf';
+switch(true){
+    case j > 0:
+        console.log('正數');
+        break;
+    case j < 0:
+        console.log('負數');
+        break;
+    case j == 0:
+        console.log('零');
+        break;
+    default:
+        console.log('error!!');
 }
