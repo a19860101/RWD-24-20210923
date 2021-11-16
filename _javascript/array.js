@@ -50,7 +50,9 @@ a.unshift('TEST');
 console.log(a.toString());
 
 // join() 陣列轉字串，可更換符號
-
-
 console.log(a.join('__'));
+
+// split() 字串轉陣列
+let str = 'Responsive_Web_Design';
+console.log(str.split('_'));
 
