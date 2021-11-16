@@ -45,5 +45,12 @@ a.shift();
 a.unshift('TEST');
 //新增陣列第一個值
 
-console.log(a);
+
+// toString() 陣列轉字串
+console.log(a.toString());
+
+// join() 陣列轉字串，可更換符號
+
+
+console.log(a.join('__'));
 
