@@ -60,7 +60,7 @@ const scores_findIndex = scores.findIndex(function(data){
 })
 console.log(scores_findIndex);
 
-// reduce
+// reduce 加總
 
 const price = [100,199,239,999];
 const total = price.reduce(function(a,b){
