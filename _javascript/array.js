@@ -5,7 +5,7 @@
 
 // let a =  new Array('Apple','Banana','Cat');
 
-let a = ['Apple','Banana','Cat','Dog','Egg','Folk'];
+let a = ['Apple','Banana','Cat'];
 
 // console.log(a);
 // console.log(a[0]);
@@ -23,6 +23,27 @@ let a = ['Apple','Banana','Cat','Dog','Egg','Folk'];
 //     console.log(a[data]);
 // }
 
-for(let data of a){
-    console.log(data);
-}
+// for(let data of a){
+//     console.log(data);
+// }
+
+// pop(),push()
+
+a.pop();
+//移除陣列最後一個值
+
+
+a.push('Dog');
+//新增陣列最後一個值
+
+
+// shift(),unshift()
+
+a.shift();
+//移除陣列第一個值
+
+a.unshift('TEST');
+//新增陣列第一個值
+
+console.log(a);
+
