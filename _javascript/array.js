@@ -5,7 +5,7 @@
 
 // let a =  new Array('Apple','Banana','Cat');
 
-let a = ['Apple','Banana','Cat'];
+let a = ['Apple','Banana','Cat','Dog','Egg'];
 
 // console.log(a);
 // console.log(a[0]);
@@ -29,30 +29,36 @@ let a = ['Apple','Banana','Cat'];
 
 // pop(),push()
 
-a.pop();
+// a.pop();
 //移除陣列最後一個值
 
 
-a.push('Dog');
+// a.push('Dog');
 //新增陣列最後一個值
 
 
 // shift(),unshift()
 
-a.shift();
+// a.shift();
 //移除陣列第一個值
 
-a.unshift('TEST');
+// a.unshift('TEST');
 //新增陣列第一個值
 
 
 // toString() 陣列轉字串
-console.log(a.toString());
+// console.log(a.toString());
 
 // join() 陣列轉字串，可更換符號
-console.log(a.join('__'));
+// console.log(a.join('__'));
 
 // split() 字串轉陣列
 let str = 'Responsive_Web_Design';
-console.log(str.split('_'));
+// console.log(str.split('_'));
 
+// splice() 拼接
+
+// a.splice(1,1,'Bread','Brown');
+a.splice(4,1);
+a.splice(2,1);
+console.log(a);
