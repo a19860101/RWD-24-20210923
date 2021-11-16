@@ -59,6 +59,11 @@ let str = 'Responsive_Web_Design';
 // splice() 拼接
 
 // a.splice(1,1,'Bread','Brown');
-a.splice(4,1);
-a.splice(2,1);
-console.log(a);
+// a.splice(4,1);
+// a.splice(2,1);
+
+// slice() 切片
+
+let a2 = a.slice(2,4);
+
+console.log(a2);
