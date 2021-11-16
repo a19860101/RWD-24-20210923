@@ -59,3 +59,11 @@ const scores_findIndex = scores.findIndex(function(data){
     return data >= 80;
 })
 console.log(scores_findIndex);
+
+// reduce
+
+const price = [100,199,239,999];
+const total = price.reduce(function(a,b){
+    return a + b;
+});
+console.log(total);
