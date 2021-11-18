@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="btn-1" onclick="foo()">click 2</button>
+    <button class="btn-2">click 2</button>
+    <button class="btn-3">click 3</button>
+    <script>
+        
+        function foo(){
+            alert('clicked!!!!');
+        }
+        let btn2 = document.querySelector('.btn-2');
+        btn2.onclick = function(){
+            alert('clicked2!!!!!')
+        }
+
+        let btn3 = document.querySelector('.btn-3');
+        btn3.addEventListener('click',function(){
+            alert('clicked3!!!!');
+        })
+    </script>
+</body>
+</html>
