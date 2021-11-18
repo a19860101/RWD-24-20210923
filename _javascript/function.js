@@ -46,3 +46,5 @@ console.log(total(1000,1.5));
 const foo = x => x*x;
 
 console.log(foo(11));
+
+//this
