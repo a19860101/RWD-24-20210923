@@ -55,10 +55,18 @@
         let menuItem = document.querySelector('.menu-item');
         // console.log(menuItem);
 
-        let menuItems = document.querySelectorAll('.menu-item');
-        for(let item of menuItems){
-            console.log(item);
-        }
+        // let menuItems = document.querySelectorAll('.menu-item');
+        // for(let item of menuItems){
+        //     console.log(item);
+        // }
+
+        // console.log(menuItems)
+        // const menu_items = Array.from(menuItems) ;
+        // console.log(menu_items);
+
+        // const menuItems = Array.from(document.querySelectorAll('.menu-item'))
+        const menuItems = [...document.querySelectorAll('.menu-item')];
+        console.log(menuItems);
     </script>
 </body>
 </html>
