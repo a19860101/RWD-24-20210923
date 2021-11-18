@@ -33,3 +33,15 @@ for(let book of books){
     console.log(book.name);
     console.log(book.price);
 }
+
+const book_name = books.map(function(data){
+    return data.name;    
+})
+
+console.log(book_name);
+
+const a = books.filter(function(data){
+    return data.price >= 400;
+})
+
+console.log(a);

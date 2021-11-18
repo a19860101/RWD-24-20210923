@@ -48,3 +48,18 @@ const foo = x => x*x;
 console.log(foo(11));
 
 //this
+
+const obj = {
+    name : 'normal',
+    active : function(){
+        return this;
+    },
+    active2 : ()=>{
+        return this;
+    }
+
+}
+
+console.log(obj.active());
+console.log(obj.active2());
+
