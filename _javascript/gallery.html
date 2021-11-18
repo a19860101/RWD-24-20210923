@@ -20,13 +20,16 @@
         .main {
             width: 100%;
         }
+        .active {
+            border: 1px solid #000;
+        }
     </style>
 </head>
 <body>
     <div class="gallery">
         <img src="images/iphone-13-pink-select-2021.png" class="main">
         <div class="items">
-            <img src="images/iphone-13-pink-select-2021.png" class="item" alt="">
+            <img src="images/iphone-13-pink-select-2021.png" class="item active" alt="">
             <img src="images/iphone-13-blue-select-2021.png" class="item" alt="">
             <img src="images/iphone-13-midnight-select-2021.png" class="item" alt="">
             <img src="images/iphone-13-starlight-select-2021.png" class="item" alt="">
@@ -46,6 +49,10 @@
             item.onclick = e => {
                 let IMG = e.target.getAttribute('src');
                 document.querySelector('.main').setAttribute('src',IMG);
+                for(let item of items){
+                    item.classList.remove('active');
+                }
+                e.target.classList.add('active');
             }
         }
     </script>
