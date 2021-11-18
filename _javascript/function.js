@@ -29,3 +29,20 @@ const total = function(price,tax){
     return price * tax;
 }
 console.log(total(1000,1.5));
+
+// 箭頭函式 arrow function
+
+// const foo = () => {
+//     return 'hello';
+// }
+
+// 當函式只有一個參數時，小括號可以省略
+// const foo = x => {
+//     return x*x;
+// }
+
+// 當函式的動作只有return時，大括號與return可以省略
+
+const foo = x => x*x;
+
+console.log(foo(11));
