@@ -36,10 +36,15 @@
     <script>
         let items = [...document.querySelectorAll('.item')];
         for(let item of items){
-            item.onclick = function(){
-                // let IMG = this.src;
-                let IMG = this.getAttribute('src');
-                console.log(IMG);
+            // item.onclick = function(){
+            //     // let IMG = this.src;
+            //     let IMG = this.getAttribute('src');
+            //     console.log(IMG);
+            //     document.querySelector('.main').setAttribute('src',IMG);
+            // }
+
+            item.onclick = e => {
+                let IMG = e.target.getAttribute('src');
                 document.querySelector('.main').setAttribute('src',IMG);
             }
         }
