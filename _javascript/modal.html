@@ -44,7 +44,7 @@
     <a href="#modal-1" class="modal-btn">modal 1</a>
     <a href="#modal-2" class="modal-btn">modal 2</a>
     <div class="modal-panel" id="modal-1">
-        <div class="modal-overlay"></div>
+        <div class="modal-overlay modal-close"></div>
         <div class="modal-container">
             <div class="modal-header">
                 <h3>Modal 1</h3>
@@ -58,7 +58,7 @@
         </div>
     </div>
     <div class="modal-panel" id="modal-2">
-        <div class="modal-overlay"></div>
+        <div class="modal-overlay modal-close"></div>
         <div class="modal-container">
             <div class="modal-header">
                 <h3>Modal 2</h3>
@@ -87,7 +87,7 @@
         }
 
         document.onclick = e => {
-            if(e.target.className === 'modal-close'){
+            if(e.target.className.indexOf('modal-close') > -1 ){
                 console.log('success')
                 document.querySelectorAll('.modal-panel').forEach(modal => {
                     modal.classList.remove('active');
