@@ -13,11 +13,15 @@
             box-sizing: border-box;
         }
         .modal-panel {
-            display: none;
+            position: relative;
+            z-index: -1;
+            opacity: 0;
+
+            transition: 1s;
         }
         .modal-panel.active {
-            display: block;
-            animation: fade-in .5s;
+            z-index: 1;
+            opacity: 1;
         }
         .modal-overlay {
             position: fixed;
@@ -26,23 +30,34 @@
             top: 0;
             left: 0;
             background-color: rgba(0,0,0,.6);
+
+            opacity: 0;
+            transition: .5s;
+        }
+        .modal-panel.active .modal-overlay {
+
+            opacity: 1;
         }
         .modal-container {
-            position: relative;
+            position: absolute;
             background-color: #fff;
             max-width: 1000px;
             width: 70%;
-            margin:20% auto;
             padding: 30px;
             border-radius: 10px;
+            left: 50%;
+            top:30vh;
+            transform: translate(-50%,-60%)scale(0);
+
+            opacity: 0;
+            transition: .5s .2s;
+        }
+        .modal-panel.active .modal-container {
+            opacity: 1;
+            transform: translate(-50%,-50%)scale(1);
         }
         .modal-body {
             line-height: 1.5rem;
-        }
-        @keyframes fade-in {
-            from {
-                opacity: 0;
-            }
         }
     </style>
 </head>
@@ -100,15 +115,6 @@
                 })
             }
         }
-
-        // 不好的方法
-        // let modalClose = document.querySelectorAll('.modal-close');
-        // for(let close of modalClose){
-        //     close.onclick = e => {
-        //         console.log(e.target);
-        //         e.target.parentElement.parentElement.parentElement.classList.remove('active');
-        //     }
-        // }
 
     </script>
 </body>
