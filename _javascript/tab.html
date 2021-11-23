@@ -41,10 +41,10 @@
 <body>
     <div class="tab">
         <div class="tab-nav">
-            <a href="#" class="tab-link active">tab 1</a>
-            <a href="#" class="tab-link">tab 2</a>
-            <a href="#" class="tab-link">tab 3</a>
-            <a href="#" class="tab-link">tab 4</a>
+            <a href="#tab-1" data-text="text1" data-panel="#tab-1" class="tab-link active">tab 1</a>
+            <a href="#tab-2" data-text="text2" data-panel="#tab-2" class="tab-link">tab 2</a>
+            <a href="#tab-3" data-text="text3" data-panel="#tab-3" class="tab-link">tab 3</a>
+            <a href="#tab-4" data-text="text4" data-panel="#tab-4" class="tab-link">tab 4</a>
         </div>
         <div class="tab-panel active" id="tab-1">
             <h3>title 1</h3>
@@ -82,12 +82,24 @@
     </div>
     <script>
         let navLinks = document.querySelectorAll('.tab-link');
+        let panels = document.querySelectorAll('.tab-panel');
         for(let navLink of navLinks){
             navLink.onclick = e => {
                 for(let navLink of navLinks){
                     navLink.classList.remove('active');
                 }
                 e.target.classList.add('active');
+
+                // let ta = e.target.getAttribute('href');
+                let ta = e.target.dataset.panel;
+                console.log(ta);
+
+                for(let panel of panels){
+                    panel.classList.remove('active');
+                }
+
+                let panel = document.querySelector(ta);
+                panel.classList.add('active');
             }
         }
     </script>
