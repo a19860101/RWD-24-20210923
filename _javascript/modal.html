@@ -85,6 +85,25 @@
                 document.querySelector(ta).classList.add('active');
             }
         }
+
+        document.onclick = e => {
+            if(e.target.className === 'modal-close'){
+                console.log('success')
+                document.querySelectorAll('.modal-panel').forEach(modal => {
+                    modal.classList.remove('active');
+                })
+            }
+        }
+
+        // 不好的方法
+        // let modalClose = document.querySelectorAll('.modal-close');
+        // for(let close of modalClose){
+        //     close.onclick = e => {
+        //         console.log(e.target);
+        //         e.target.parentElement.parentElement.parentElement.classList.remove('active');
+        //     }
+        // }
+
     </script>
 </body>
 </html>
