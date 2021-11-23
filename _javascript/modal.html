@@ -5,11 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI';
+            box-sizing: border-box;
+        }
+        .modal-panel {
+            display: none;
+        }
+        .modal-panel.active {
+            display: block;
+        }
+        .modal-overlay {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(0,0,0,.6);
+        }
+        .modal-container {
+            position: relative;
+            background-color: #fff;
+            max-width: 1000px;
+            width: 70%;
+            margin:20% auto;
+            padding: 30px;
+            border-radius: 10px;
+        }
+        .modal-body {
+            line-height: 1.5rem;
+        }
+    </style>
 </head>
 <body>
-    <a href="#" class="modal-btn">modal 1</a>
-    <a href="#" class="modal-btn">modal 2</a>
-    <div class="modal-panel">
+    <a href="#modal-1" class="modal-btn">modal 1</a>
+    <a href="#modal-2" class="modal-btn">modal 2</a>
+    <div class="modal-panel" id="modal-1">
         <div class="modal-overlay"></div>
         <div class="modal-container">
             <div class="modal-header">
@@ -23,7 +57,7 @@
             </div>
         </div>
     </div>
-    <div class="modal-panel">
+    <div class="modal-panel" id="modal-2">
         <div class="modal-overlay"></div>
         <div class="modal-container">
             <div class="modal-header">
