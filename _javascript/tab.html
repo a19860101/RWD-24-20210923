@@ -80,5 +80,16 @@
             </p>
         </div>
     </div>
+    <script>
+        let navLinks = document.querySelectorAll('.tab-link');
+        for(let navLink of navLinks){
+            navLink.onclick = e => {
+                for(let navLink of navLinks){
+                    navLink.classList.remove('active');
+                }
+                e.target.classList.add('active');
+            }
+        }
+    </script>
 </body>
 </html>
