@@ -23,6 +23,13 @@
             color: #fff;
 
             border-bottom: 2px solid #01574d;
+            transition: .5s;
+        }
+        .collapse h2:hover {
+            background-color: #00d3ba;
+        }
+        .collapse h2.active {
+            background-color: #00d3ba;
         }
         .collapse div {
             background-color: #a0fcf1;
@@ -59,6 +66,8 @@
                 // $(this).next().toggle(600);
                 // $(this).next().fadeToggle();
                 $(this).next().slideToggle();
+
+                $(this).toggleClass('active')
             })
         })
     </script> 
