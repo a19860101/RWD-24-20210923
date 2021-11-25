@@ -7,6 +7,9 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="container">
+
+    </div>
     <script>
         let url = 'data.json';
         // fetch(url)
@@ -21,9 +24,20 @@
         .then(datas => {
             // console.log(datas);
             for(let data of datas){
-                console.log(data.name);
-                console.log(data.author);
-                console.log(data.price);
+                let books = document.createElement('div');
+                books.classList.add('books');
+
+                let bookName = document.createElement('div');
+                bookName.classList.add('book_name');
+                bookName.append(data.name);
+
+                let bookAuthor = document.createElement('div');
+                bookAuthor.classList.add('book_author');
+                bookAuthor.append(data.author);
+
+                books.append(bookName,bookAuthor)
+
+                document.querySelector('.container').append(books);
             }
         })
     </script>
