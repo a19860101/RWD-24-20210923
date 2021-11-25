@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <style>
+        .gallery {
+            width: 600px;
+            margin: auto;
+        }
+        .item {
+            width: 100px;
+        }
+        .items {
+            display: flex;
+            justify-content: space-around;
+        }
+        .main {
+            width: 100%;
+        }
+        .active {
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="images/iphone-13-pink-select-2021.png" class="main">
+        <div class="items">
+            <img src="images/iphone-13-pink-select-2021.png" class="item active" alt="">
+            <img src="images/iphone-13-blue-select-2021.png" class="item" alt="">
+            <img src="images/iphone-13-midnight-select-2021.png" class="item" alt="">
+            <img src="images/iphone-13-starlight-select-2021.png" class="item" alt="">
+            <img src="images/iphone-13-product-red-select-2021.png" class="item" alt="">
+        </div>
+    </div>
+    <script>
+        $(function(){
+            $('.item').click(function(){
+                let main = $(this).attr('src');
+                $('.main').attr('src',main);
+                $('.item').removeClass('active');
+                $(this).addClass('active');
+            })
+        })
+    </script>
+</body>
+</html>
