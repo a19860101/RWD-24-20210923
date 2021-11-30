@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <style>
         * {
             margin: 0;
@@ -45,10 +47,10 @@
 </head>
 <body>
     <nav>
-        <a href="#">About</a>
-        <a href="#">Service</a>
-        <a href="#">Product</a>
-        <a href="#">Contact</a>
+        <a href="#" data-target="#about">About</a>
+        <a href="#" data-target="#service">Service</a>
+        <a href="#" data-target="#product">Product</a>
+        <a href="#" data-target="#contact">Contact</a>
     </nav>
     <section id="about">
         <h2>About</h2>
@@ -62,5 +64,19 @@
     <section id="contact">
         <h2>Contact</h2>
     </section>
+    <script>
+        $(function(){
+            $('nav a').click(function(){
+                let target = $(this).data('target');
+                let offset = $(target).offset().top;
+                console.log(offset);
+
+            })
+
+
+
+            // console.log($('#service').offset().top)
+        })
+    </script>
 </body>
 </html>
