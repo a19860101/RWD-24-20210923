@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 </head>
 <body>
     <nav>
@@ -42,9 +44,9 @@
         <img src="images/banner-1.jpg" alt="">
     </header>
     <div id="slogan">
-        <div class="slogan-line"></div>
-        <h2>享受。自在。生活</h2>
-        <p>Enjoy your life with a cup of coffee.</p>
+        <div class="slogan-line wow fadeIn" data-wow-offset="200"></div>
+        <h2 class="wow fadeIn" data-wow-offset="200" >享受。自在。生活</h2>
+        <p class="wow fadeIn" data-wow-offset="200" data-wow-delay=".5s">Enjoy your life with a cup of coffee.</p>
     </div>
     <div id="news" class="container">
         <div class="news-title">
@@ -91,30 +93,30 @@
     </div>
     <div id="products" class="container-xl row">
         <div class="col-lg-6 col-12">
-            <div class="products-items">
+            <div class="products-items wow fadeInLeft" data-wow-offset="200">
                 <img src="https://picsum.photos/id/32/1600/900" alt="" class="w-100">
                 <div class="products-info">
                     <div class="products-text">經典現烘手沖咖啡</div>
                     <div class="products-text">黃金曼巴 巧克力王子 花香揶家雪菲</div>
                 </div>
             </div>
-            <h2 class="products-title">店內飲品</h2>
+            <h2 class="products-title wow fadeInUp" data-wow-delay=".6s">店內飲品</h2>
         </div>
         <div class="col-lg-6 col-12">
-            <div class="products-items">
+            <div class="products-items wow fadeInRight" data-wow-offset="200">
                 <img src="https://picsum.photos/id/82/1600/900" alt="" class="w-100">
                 <div class="products-info">
                     <div class="products-text">黃金曼特寧</div>
                     <div class="products-text">濃厚的黑巧克力口味，層次豐富，集優雅的清爽與強勁</div>
                 </div>
             </div>
-            <h2 class="products-title">商品介紹</h2>
+            <h2 class="products-title wow fadeInUp" data-wow-delay=".6s">商品介紹</h2>
         </div>
     </div>
     <div class="row" id="banner">
         <div class="col-lg-6 col-12 p-0">
             <div class="row">
-                <div class="col-lg-12 col-sm-4 col-12">
+                <div class="col-lg-12 col-sm-4 col-12 wow fadeIn" data-wow-delay="0s">
                     <div class="banner-content">
                         <a href="#" class="banner-link"><img src="https://picsum.photos/id/81/1600/900" alt="" class="w-100"></a>
                         <div class="banner-info">
@@ -123,7 +125,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-sm-4 col-12">
+                <div class="col-lg-6 col-sm-4 col-12 wow fadeIn" data-wow-delay=".3s">
                     <div class="banner-content">
                         <a href="#" class="banner-link"><img src="https://picsum.photos/id/82/1600/900" alt="" class="w-100"></a>
                         <div class="banner-info">
@@ -132,7 +134,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-sm-4 col-12">
+                <div class="col-lg-6 col-sm-4 col-12 wow fadeIn" data-wow-delay=".6s">
                     <div class="banner-content">
                         <a href="#" class="banner-link"><img src="https://picsum.photos/id/83/1600/900" alt="" class="w-100"></a>
                         <div class="banner-info">
@@ -145,7 +147,7 @@
         </div>
         <div class="col-lg-6 col-12 p-0">
             <div class="row">
-                <div class="col-lg-6 col-sm-4 col-12">
+                <div class="col-lg-6 col-sm-4 col-12 wow fadeIn" data-wow-delay=".9s">
                     <div class="banner-content">
                         <a href="#" class="banner-link"><img src="https://picsum.photos/id/84/1600/900" alt="" class="w-100"></a>
                         <div class="banner-info">
@@ -154,7 +156,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-sm-4 col-12">
+                <div class="col-lg-6 col-sm-4 col-12 wow fadeIn" data-wow-delay="1.2s">
                     <div class="banner-content">
                         <a href="#" class="banner-link"><img src="https://picsum.photos/id/85/1600/900" alt="" class="w-100"></a>
                         <div class="banner-info">
@@ -163,7 +165,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-12 col-sm-4 col-12">
+                <div class="col-lg-12 col-sm-4 col-12 wow fadeIn" data-wow-delay="1.5s">
                     <div class="banner-content">
                         <a href="#" class="banner-link"><img src="https://picsum.photos/id/87/1600/900" alt="" class="w-100"></a>
                         <div class="banner-info">
@@ -214,6 +216,7 @@
     <a href="#" class="top"><i class="fas fa-chevron-up fa-lg"></i></a>
     <script>
         $(function(){
+            new WOW().init();
             $('.top').click(function(){
                 $('html,body').animate({
                     scrollTop:0
