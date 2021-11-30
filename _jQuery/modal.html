@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI';
+            box-sizing: border-box;
+        }
+        .modal-panel {
+            display: none;
+        }
+        .modal-panel.active {
+            display: block;
+        }
+        .modal-overlay {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(0,0,0,.6);
+        }
+        .modal-container {
+            position: relative;
+            background-color: #fff;
+            max-width: 1000px;
+            width: 70%;
+            margin:20% auto;
+            padding: 30px;
+            border-radius: 10px;
+        }
+        .modal-body {
+            line-height: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <a href="#modal-1" class="modal-btn">modal 1</a>
+    <a href="#modal-2" class="modal-btn">modal 2</a>
+    <div class="modal-panel" id="modal-1">
+        <div class="modal-overlay modal-close"></div>
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3>Modal 1</h3>
+            </div>
+            <div class="modal-body">
+                <p>智慧真實翻譯風雲一方面打算新人警告處於狀況藥品，含有方案什麼是許多，動力共有身後難得吃了傳統前進另外此刻，今日化工始終立場異常原因之家隨着繼續，一系列，就算從此插入鈴聲一批而且生成播放，關注效率維持看了目標嘿嘿當初，告訴我節目設備，交易近日我只提高只能共。</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="modal-close">關閉</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal-panel" id="modal-2">
+        <div class="modal-overlay modal-close"></div>
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3>Modal 2</h3>
+            </div>
+            <div class="modal-body">
+                <p>智慧真實翻譯風雲一方面打算新人警告處於狀況藥品，含有方案什麼是許多，動力共有身後難得吃了傳統前進另外此刻，今日化工始終立場異常原因之家隨着繼續，一系列，就算從此插入鈴聲一批而且生成播放，關注效率維持看了目標嘿嘿當初，告訴我節目設備，交易近日我只提高只能共。</p>
+                <p>
+                    注重亞洲，事故上升體會信箱根據精神國人造成，日期房地產拿出精英你怎不來留言板是個暴力網頁課程比賽長期，群眾增強比例提醒榮譽帶著聯盟司機讀者快捷怪物轉讓上網，批評本身地址儀器標誌食物最後顏色進去，出發男孩可以說買賣回來貼布獎勵不會不敢臺中，情形郵箱，國家設。
+                </p>
+                <p>
+                    之下這樣廣播特色藍色友情連結飯店，對話受傷考試求職增強較高就業部分走向伺服器三星發佈日期，效率好多技術此刻演唱會加強新型瞭解施工證券異常彩色距離，又有國內外晶片就好討論區飯店前進空中方式近期古代上述對我高速，裝飾事項生日沒有什麼想想證據等方面父母，原始碼。
+                </p>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="modal-close">關閉</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function(){
+            $('.modal-btn').click(function(){
+                let href = $(this).attr('href');
+                $(href).fadeIn();
+            })
+            $('.modal-close').click(function(){
+                $('.modal-panel').fadeOut();
+            })
+        })
+    </script>
+</body>
+</html>
