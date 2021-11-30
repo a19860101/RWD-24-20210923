@@ -19,6 +19,8 @@
             padding-bottom: 15px;
             background-color: #222;
             text-align: center;
+
+            position: fixed;
         }
         nav a {
             color: #fff;
@@ -43,6 +45,20 @@
         #service {background-color: #664E88;}
         #product {background-color: #FCFFA6;}
         #contact {background-color: #FF5C58;}
+        .gotop {
+            display: block;
+            width: 40px;
+            height: 40px;
+            background-color: #222;
+            color: #fff;
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+            text-decoration: none;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 50%;
+        }
     </style>
 </head>
 <body>
@@ -64,13 +80,23 @@
     <section id="contact">
         <h2>Contact</h2>
     </section>
+    <a href="#" class="gotop">TOP</a>
     <script>
         $(function(){
             $('nav a').click(function(){
                 let target = $(this).data('target');
                 let offset = $(target).offset().top;
-                console.log(offset);
+                // console.log(offset);
 
+                $('html,body').animate({
+                    scrollTop: offset
+                });
+
+            })
+            $('.gotop').click(function(){
+                $('html,body').animate({
+                    scrollTop: 0
+                })
             })
 
 
