@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.min.css">
     <style>
         * {
             margin: 0;
@@ -49,7 +49,7 @@
         #product {background-color: #FCFFA6;}
         #contact {background-color: #FF5C58;}
         .gotop {
-            display: block;
+            display: none;
             width: 40px;
             height: 40px;
             background-color: #222;
@@ -61,11 +61,11 @@
             line-height: 40px;
             text-align: center;
             border-radius: 50%;
-            transform: translateX(200px)rotate(180deg);
-            transition: 1s;
+            /* transform: translateX(200px)rotate(180deg); */
+            /* transition: 1s; */
         }
         .gotop.in {
-            transform: translateX(0)rotate(0deg);
+            /* transform: translateX(0)rotate(0deg); */
         }
     </style>
 </head>
@@ -118,14 +118,18 @@
             $(window).scroll(function(){
                 let h = $(window).scrollTop();
                 // console.log(h);
+                let _in = 'animated zoomIn';
+                let _out = 'animated rollOut';
                 if(h > 600){
                     // $('.gotop').show();
                     // $('.gotop').fadeIn();
-                    $('.gotop').addClass('in')
+                    // $('.gotop').addClass('in')
+                    $('.gotop').show().removeClass(_out).addClass(_in);
                 }else{
                     // $('.gotop').hide();
                     // $('.gotop').fadeOut();
-                    $('.gotop').removeClass('in')
+                    // $('.gotop').removeClass('in')
+                    $('.gotop').removeClass(_in).addClass(_out)
                 }
                 $('nav a').each(function(){
                     let t = $(this).data('target');
