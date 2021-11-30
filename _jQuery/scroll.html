@@ -68,6 +68,9 @@
         .gotop.in {
             /* transform: translateX(0)rotate(0deg); */
         }
+        h2 {
+            background-color: #ccc;
+        }
     </style>
 </head>
 <body>
@@ -78,13 +81,18 @@
         <a href="#" data-target="#contact">Contact</a>
     </nav>
     <section id="about">
-        <h2 class="wow fadeInRight">About</h2>
+        <h2 
+            class="wow fadeInRight" 
+            data-wow-duration="1s" 
+            data-wow-delay="1s"
+            data-wow-iteration="1"
+        >About</h2>
     </section>
     <section id="service">
         <h2 class="wow fadeInRight">Service</h2>
     </section>
     <section id="product">
-        <h2 class="wow fadeInRight">Product</h2>
+        <h2 class="wow fadeInRight" data-wow-offset="200">Product</h2>
     </section>
     <section id="contact">
         <h2 class="wow fadeInRight">Contact</h2>
