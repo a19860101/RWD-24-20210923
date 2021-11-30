@@ -32,7 +32,10 @@
             background-color: #fa0;
             color: #222;
         }
-
+        nav a.active {
+            background-color: #fa0;
+            color: #222;
+        }
         section {
             width: 100%;
             height: 100vh;
@@ -93,6 +96,8 @@
                 $('html,body').animate({
                     scrollTop: offset
                 });
+                // $('nav a').removeClass('active');
+                // $(this).addClass('active');
                 // return false;
                 e.preventDefault();
             })
@@ -107,7 +112,7 @@
 
             $(window).scroll(function(){
                 let h = $(window).scrollTop();
-                console.log(h);
+                // console.log(h);
                 if(h > 600){
                     // $('.gotop').show();
                     $('.gotop').fadeIn();
@@ -115,7 +120,17 @@
                     // $('.gotop').hide();
                     $('.gotop').fadeOut();
                 }
+                $('nav a').each(function(){
+                    let t = $(this).data('target');
+                    let o = $(t).offset().top;
+                    
+                    if(h > o - 200){
+                        $('nav a').removeClass('active');
+                        $(this).addClass('active');
+                    }
+                })
             });
+            
 
 
             // console.log($('#service').offset().top)
