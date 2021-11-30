@@ -46,7 +46,7 @@
         #product {background-color: #FCFFA6;}
         #contact {background-color: #FF5C58;}
         .gotop {
-            display: block;
+            display: none;
             width: 40px;
             height: 40px;
             background-color: #222;
@@ -99,6 +99,17 @@
                 })
             })
 
+            $(window).scroll(function(){
+                let h = $(window).scrollTop();
+                console.log(h);
+                if(h > 600){
+                    // $('.gotop').show();
+                    $('.gotop').fadeIn();
+                }else{
+                    // $('.gotop').hide();
+                    $('.gotop').fadeOut();
+                }
+            });
 
 
             // console.log($('#service').offset().top)
