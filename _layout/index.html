@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
     <nav>
@@ -211,5 +212,24 @@
     <div class="service"></div>
     <div class="msg">五倍券優惠看這邊!</div>
     <a href="#" class="top"><i class="fas fa-chevron-up fa-lg"></i></a>
+    <script>
+        $(function(){
+            $('.top').click(function(){
+                $('html,body').animate({
+                    scrollTop:0
+                })
+                return false;
+            })
+            $('.top').hide();
+            $(window).scroll(function(){
+                let h = $(window).scrollTop();
+                if(h > 600){
+                    $('.top').fadeIn();
+                }else{
+                    $('.top').fadeOut();
+                }
+            })
+        })
+    </script>
 </body>
 </html>
