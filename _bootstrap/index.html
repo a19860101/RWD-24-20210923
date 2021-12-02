@@ -21,6 +21,12 @@
             z-index: 999;
             width: 40px;
             height: 40px;
+
+            transform: translateX(100px)rotate(360deg);
+            transition: .5s;
+        }
+        .gotop.active {
+            transform: translateX(0)rotate(0);
         }
     </style>
 </head>
@@ -394,6 +400,14 @@
     </a>
     <script>
         $(function(){
+            $(window).scroll(function(){
+                let h = $(window).scrollTop();
+                if(h > 600){
+                    $('.gotop').addClass('active');
+                }else{
+                    $('.gotop').removeClass('active');
+                }
+            })
         })
     </script>
 </body>
