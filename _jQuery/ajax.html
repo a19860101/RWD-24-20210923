@@ -31,20 +31,28 @@
                     county.forEach(data=>{
                         $('#county').append(`<option value="${data}">${data}</option>`);
                     })
-                    
-                    data.records.forEach(function(data){
-                        let content = `
-                            <div>
-                                <h2>${data.SiteName}</h2>
-                                <div>一氧化氮(NO):${data.NO}</div>
-                                <div>二氧化氮(NO2):${data.NO2}</div>
-                                <div>臭氧(O3):${data.O3}</div>
-                                <div>PM2.5:${data['PM2.5']}</div>
-                                <div>二氧化硫(SO2):${data.SO2}</div>
-                            </div>
-                        `;
-                        $('.container').append(content);
+
+                    $('#county').change(function(){
+                        $('.container').empty();
+                        let county = $(this).val();
+                        data.records.forEach(function(data){
+                            if(county === data.County){ 
+                                let content = `
+                                <div>
+                                    <h2>${data.SiteName}</h2>
+                                    <div>一氧化氮(NO):${data.NO}</div>
+                                    <div>二氧化氮(NO2):${data.NO2}</div>
+                                    <div>臭氧(O3):${data.O3}</div>
+                                    <div>PM2.5:${data['PM2.5']}</div>
+                                    <div>二氧化硫(SO2):${data.SO2}</div>
+                                    </div>
+                                    `;
+                                $('.container').append(content);
+                            }
+                        })
                     })
+                    
+                   
                 },
                 error:function(){
 
