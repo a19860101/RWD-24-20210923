@@ -8,7 +8,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
-    <select name="" id="">
+    <select name="" id="county">
         <option>--請選擇--</option>
     </select>
     <div class="container">
@@ -27,7 +27,10 @@
                     //     return data.County;
                     // })
                     let counties = data.records.map(data => data.County);
-                    console.log(counties)
+                    let county = [...new Set(counties)];
+                    county.forEach(data=>{
+                        $('#county').append(`<option value="${data}">${data}</option>`);
+                    })
                     
                     data.records.forEach(function(data){
                         let content = `
