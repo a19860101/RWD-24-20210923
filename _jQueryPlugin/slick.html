@@ -18,9 +18,23 @@
             max-width: 1200px;
             margin: auto;
         }
-        img {
+        .slick-next:before, .slick-prev:before {
+            color: #222;
+        }
+        img
+         {
             width: 100%;
             margin: 0 10px;
+        }
+        .slick-slide {
+            /* opacity: .3; */
+            transition: .5s;
+            filter: blur(15px);
+        }
+        .slick-current {
+            /* opacity: 1; */
+            filter: blur(0);
+
         }
     </style>
 </head>
@@ -41,15 +55,15 @@
     <script>
         $(function(){
             $('#slider').slick({
-                autoplay: true,
+                autoplay: false,
                 arrows: true,
                 dots: true,
-                slidesToShow: 3,
+                slidesToShow: 1,
                 slidesToScroll: 1,
                 speed:1000,
                 autoplaySpeed: 5000,
-                // centerMode: true,
-                // centerPadding: '100px',
+                centerMode: true,
+                centerPadding: '200px',
                 fade: false,
                 responsive:[
                     {
