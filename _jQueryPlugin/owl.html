@@ -22,9 +22,11 @@
         .owl-item {
             opacity: .3;
             transition: .3s .2s;
+            transform: scale(.6)!important;
         }
         .owl-item.active.center {
             opacity: 1;
+            transform: scale(1)!important;
         }
     </style>
 </head>
@@ -45,7 +47,7 @@
         $(function(){
             $('#slider').owlCarousel({
                 items:1,
-                margin: 15,
+                margin: -35,
                 autoplay: false,
                 dots: false,
                 dotsSpeed: 1000,

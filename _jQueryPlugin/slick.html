@@ -30,11 +30,12 @@
             /* opacity: .3; */
             transition: .5s;
             filter: blur(15px);
+            transform: scale(.6);
         }
         .slick-current {
             /* opacity: 1; */
             filter: blur(0);
-
+            transform: scale(1);
         }
     </style>
 </head>
@@ -63,20 +64,20 @@
                 speed:1000,
                 autoplaySpeed: 5000,
                 centerMode: true,
-                centerPadding: '200px',
+                centerPadding: '0',
                 fade: false,
                 responsive:[
                     {
                         breakpoint:960,
                         settings: {
-                            slidesToShow: 2,
+                            slidesToShow: 3,
                             arrows:false
                         }
                     },
                     {
                         breakpoint: 600,
                         settings: {
-                            slidesToShow:1,
+                            slidesToShow:5,
                             arrows: false,
                             dots: false
                         }
