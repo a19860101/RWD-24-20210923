@@ -33,12 +33,18 @@
         $(function(){
             $('#slider').owlCarousel({
                 items:1,
-                autoplay: true,
+                margin: 15,
+                autoplay: false,
                 dots: true,
+                dotsSpeed: 1000,
                 nav: true,
+                navSpeed:1000,
                 loop: true,
                 autoplayTimeout: 6000,
-                autoplaySpeed: 1000
+                autoplaySpeed: 1000,
+                center: true,
+                stagePadding: 100
+
             });
         })
     </script>
