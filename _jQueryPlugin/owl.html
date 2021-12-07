@@ -31,7 +31,15 @@
     </div>
     <script>
         $(function(){
-            $('#slider').owlCarousel();
+            $('#slider').owlCarousel({
+                items:1,
+                autoplay: true,
+                dots: true,
+                nav: true,
+                loop: true,
+                autoplayTimeout: 6000,
+                autoplaySpeed: 1000
+            });
         })
     </script>
 </body>
