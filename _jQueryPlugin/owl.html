@@ -35,7 +35,7 @@
                 items:1,
                 margin: 15,
                 autoplay: false,
-                dots: true,
+                dots: false,
                 dotsSpeed: 1000,
                 nav: true,
                 navSpeed:1000,
@@ -43,7 +43,17 @@
                 autoplayTimeout: 6000,
                 autoplaySpeed: 1000,
                 center: true,
-                stagePadding: 100
+                stagePadding: 0,
+                responsive:{
+                    600:{
+                        items: 3,
+                        dots:true
+                    },
+                    1000:{
+                        items: 5,
+                        dots: true
+                    }
+                }
 
             });
         })
