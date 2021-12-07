@@ -9,10 +9,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-
+    <style>
+        #slider {
+            max-width: 1200px;
+            margin: auto;
+        }
+    </style>
 </head>
 <body>
-    <div id="slider">
+    <div id="slider" class="owl-carousel owl-theme">
         <img src="https://picsum.photos/id/54/1600/800" alt="">
         <img src="https://picsum.photos/id/55/1600/800" alt="">
         <img src="https://picsum.photos/id/56/1600/800" alt="">
@@ -24,6 +29,10 @@
         <img src="https://picsum.photos/id/47/1600/800" alt="">
         <img src="https://picsum.photos/id/48/1600/800" alt="">
     </div>
-
+    <script>
+        $(function(){
+            $('#slider').owlCarousel();
+        })
+    </script>
 </body>
 </html>
