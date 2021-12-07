@@ -11,12 +11,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
 
     <style>
+        body {
+            background-color: #098;
+        }
         #slider {
             width: 1200px;
             margin: auto;
         }
         img {
             width: 100%;
+            /* margin: 0 10px; */
         }
     </style>
 </head>
@@ -27,12 +31,23 @@
         <img src="https://picsum.photos/id/56/1600/800" alt="">
         <img src="https://picsum.photos/id/57/1600/800" alt="">
         <img src="https://picsum.photos/id/58/1600/800" alt="">
+        <img src="https://picsum.photos/id/44/1600/800" alt="">
+        <img src="https://picsum.photos/id/45/1600/800" alt="">
+        <img src="https://picsum.photos/id/46/1600/800" alt="">
+        <img src="https://picsum.photos/id/47/1600/800" alt="">
+        <img src="https://picsum.photos/id/48/1600/800" alt="">
     </div>
 
     <script>
         $(function(){
             $('#slider').slick({
-                autoplay: true
+                autoplay: true,
+                arrows: true,
+                dots: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                speed:300,
+                autoplaySpeed: 5000
             });
         })
     </script>
