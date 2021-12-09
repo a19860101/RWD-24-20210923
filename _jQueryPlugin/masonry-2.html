@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin: auto;
+        }
+        img {
+            width: 100%;
+            vertical-align: top;
+        }
+        .box {
+            width: 250px;
+        }
+    </style>
+    <script>
+        $(function(){
+            $('.container').imagesLoaded(function(){
+                $('.container').masonry({
+                    isFitWidth: true
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="https://picsum.photos/id/23/800/600" alt="">
+        </div>
+        <div class="box">
+            <img src="https://picsum.photos/id/13/1800/600" alt="">
+        </div>
+        <div class="box">
+            <img src="https://picsum.photos/id/33/800/1600" alt="">
+        </div>
+        <div class="box">
+            <img src="https://picsum.photos/id/43/1200/1000" alt="">
+        </div>
+        <div class="box">
+            <img src="https://picsum.photos/id/53/800/1200" alt="">
+        </div>
+        <div class="box">
+            <img src="https://picsum.photos/id/123/800/600" alt="">
+        </div>
+        <div class="box">
+            <img src="https://picsum.photos/id/13/1800/600" alt="">
+        </div>
+        <div class="box">
+            <img src="https://picsum.photos/id/63/800/1600" alt="">
+        </div>
+        <div class="box">
+            <img src="https://picsum.photos/id/73/1200/1000" alt="">
+        </div>
+        <div class="box">
+            <img src="https://picsum.photos/id/83/800/1200" alt="">
+        </div>
+        <div class="box">
+            <img src="https://picsum.photos/id/93/800/600" alt="">
+        </div>
+        <div class="box">
+            <img src="https://picsum.photos/id/16/1800/600" alt="">
+        </div>
+        <div class="box">
+            <img src="https://picsum.photos/id/36/800/1600" alt="">
+        </div>
+        <div class="box">
+            <img src="https://picsum.photos/id/46/1200/1000" alt="">
+        </div>
+        <div class="box">
+            <img src="https://picsum.photos/id/56/800/1200" alt="">
+        </div>
+    </div>
+</body>
+</html>
