@@ -22,6 +22,14 @@
             width: 100%;
             height: 600px;
         }
+        .box {
+            width: 800px;
+            margin: auto;
+        }
+        h1 {
+            background-color: #ccc;
+            display: inline;
+        }
     </style>
 </head>
 <body>
@@ -34,6 +42,11 @@
         <img src="https://picsum.photos/id/48/1600/800" class="p2">
     </div>
     <div id="fourth" class="container"></div>
+    <div class="container"></div>
+    <div class="box">
+        <img src="https://picsum.photos/id/78/1600/800" class="p3">
+    </div>
+    <div class="container"></div>
     <script>
         let p1 = document.querySelector('.p1');
         new simpleParallax(p1);
@@ -42,6 +55,13 @@
             orientation: 'right',
             scale: 1.5,
             delay: 10,
+        })
+        let p3 = document.querySelector('.p3');
+        new simpleParallax(p3,{
+            orientation: 'right',
+            scale: 2.5,
+            delay: 2,
+            overflow:true
         })
     </script>
 </body>
