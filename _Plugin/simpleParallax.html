@@ -27,12 +27,20 @@
 <body>
     <!-- https://simpleparallax.com/ -->
     <div id="first" class="container">
-        <img src="https://picsum.photos/id/98/1600/800" alt="">
+        <img src="https://picsum.photos/id/98/1600/800" class="p1">
     </div>
     <div id="second" class="container"></div>
     <div id="third" class="container">
-        <img src="https://picsum.photos/id/48/1600/800" alt="">
+        <img src="https://picsum.photos/id/48/1600/800" class="p2">
     </div>
     <div id="fourth" class="container"></div>
+    <script>
+        let p1 = document.querySelector('.p1');
+        new simpleParallax(p1);
+        let p2 = document.querySelector('.p2');
+        new simpleParallax(p2,{
+            orientation: 'left'
+        })
+    </script>
 </body>
 </html>
