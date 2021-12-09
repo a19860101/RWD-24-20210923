@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin: auto;
+        }
+        img {
+            width: 100%;
+            vertical-align: top;
+        }
+        .box {
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    </div>
+    <script>
+        $(function(){
+            $.ajax({
+                url:'https://picsum.photos/v2/list',
+                dataType: 'json',
+                success:function(datas){
+                    datas.forEach(data => {
+                        let content = `
+                            <div class="box">
+                                <img src="${data.download_url}">
+                            </div>
+                        `;
+                        $('.container').append(content);
+                    })
+                    $('.container').imagesLoaded(function(){
+                        $('.container').masonry({
+                            isFitWidth: true
+                        })
+                    })
+                },
+                error:function(){
+                    
+                }
+            })
+        })
+    </script>
+</body>
+</html>
