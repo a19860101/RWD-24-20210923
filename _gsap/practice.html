@@ -45,16 +45,27 @@
             transform-origin: left;
             top: 0;
         }
+        .start {
+            line-height: 100vh;
+            display: block;
+            position: fixed;
+            text-align: center;
+            z-index: 999;
+            width: 100%;
+            color: #96182d;
+            font-size: 5rem;
+        }
     </style>
 </head>
 <body>
+    <a href="#" class="start">start</a>
     <div class="overlay"></div>
     <div class="overlay2"></div>
     <div class="container">
         <div class="content">
             <h1>HELLO GSAP!!</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sapiente numquam dolor laudantium rerum dolorem vero aut, nulla at repellendus iusto debitis eligendi dolorum illo perferendis nam! Harum, autem fugit.</p>
-            <a href="#">GO!</a>
+            <a href="#" class="go">GO!</a>
         </div>
         <div class="gallery">
             <img src="https://picsum.photos/id/76/600" alt="">
@@ -62,14 +73,19 @@
     </div>
     <script>
         gsap.defaults({duration:1});
-
-        gsap.timeline()
-            .to('.overlay2',{scaleX:0})
-            .to('.overlay',{scaleX:0})
+    
+        let animation = gsap.timeline()
+            .to('.start',{zIndex:-1,opacity:0,duration:.2})
+            .to('.overlay2',{scaleX:0,delay:.5})
+            .to('.overlay',{scaleX:0},'-=.8')
             .from('h1',{opacity:0,y:30})
             .from('p',{opacity:0,y:30})
-            .from('a',{opacity:0,y:30})
-            .from('.gallery',{opacity:0,x:30})
+            .from('.go',{opacity:0,y:30},'+=.2')
+            .from('.gallery',{opacity:0,x:30},'-=.3');
+        animation.pause();
+        document.querySelector('.start').onclick = () =>{
+            animation.play();
+        }
     </script>
 </body>
 </html>
