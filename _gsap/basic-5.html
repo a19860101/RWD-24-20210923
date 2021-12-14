@@ -17,11 +17,23 @@
 </head>
 <body>
     <button class="start">start</button>
+    <button class="pause">pause</button>
+    <button class="reverse">reverse</button>
+    <button class="restart">restart</button>
     <div class="box"></div>
     <script>
-        let tween = gsap.to('.box',{x:500,duration:1,paused:true});
+        let tween = gsap.to('.box',{x:500,rotate:360,duration:3,paused:true});
         document.querySelector('.start').onclick = () => {
             tween.play();
+        }
+        document.querySelector('.pause').onclick = () => {
+            tween.pause();
+        }
+        document.querySelector('.reverse').onclick = () => {
+            tween.reverse();
+        }
+        document.querySelector('.restart').onclick = () => {
+            tween.restart();
         }
 
     </script>
