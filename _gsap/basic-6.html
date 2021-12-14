@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+
+</head>
+<body>
+    <h1>hello gsap  </h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta saepe deserunt, voluptas hic quisquam odio rerum sequi tenetur magnam numquam veniam facere repudiandae sapiente, nisi nihil. Reprehenderit illum quidem neque.</p>
+    <a href="#">link</a>
+    <script>
+        let tl = gsap.timeline();
+        tl.from('h1',{opacity:0,y:20,duration:.6})
+          .from('p',{opacity:0,y:20,duration:.6})
+          .from('a',{opacity:0,y:20,duration:.6})
+        // gsap.timeline()
+        //     .from('h1',{opacity:0,y:20,duration:.6})
+        //     .from('p',{opacity:0,y:20,duration:.6})
+        //     .from('a',{opacity:0,y:20,duration:.6})
+    </script>
+</body>
+</html>
