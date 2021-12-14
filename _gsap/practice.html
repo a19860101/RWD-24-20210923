@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'segoe ui';
+        }
+        body {
+            background-color: #FFE699;
+        }
+        .container {
+            max-width: 1200px;
+            height: 100vh;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content,.gallery {
+            flex: 0 0 50%;
+            padding: 30px;
+        }
+
+        .overlay {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-color: #FF9292;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="content">
+            <h1>HELLO GSAP!!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sapiente numquam dolor laudantium rerum dolorem vero aut, nulla at repellendus iusto debitis eligendi dolorum illo perferendis nam! Harum, autem fugit.</p>
+            <a href="#">GO!</a>
+        </div>
+        <div class="gallery">
+            <img src="https://picsum.photos/id/76/600" alt="">
+        </div>
+    </div>
+</body>
+</html>
