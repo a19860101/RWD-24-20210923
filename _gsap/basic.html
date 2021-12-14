@@ -12,10 +12,22 @@
             height: 100px;
             background-color: #e04;
         }
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color: #beff44;
+        }
+        .box3 {
+            width: 100px;
+            height: 100px;
+            background-color: #44abff;
+        }
     </style>
 </head>
 <body>
     <div class="box"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
     <script>
         gsap.to('.box',{
             x: 600,
@@ -26,6 +38,22 @@
             opacity: .5,
             duration: 10
         });
+        gsap.from('.box2',{
+            x: 200,
+            y: 600,
+            rotate: 180,
+            duration: 5,
+        });
+        gsap.fromTo('.box3',{
+            x: 500,
+            y: 500,
+        },{
+            x:0,
+            y:0,
+            rotate: 270,
+            duration: 3
+        })
+
     </script>
 </body>
 </html>
